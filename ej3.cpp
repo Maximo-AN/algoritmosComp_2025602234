@@ -5,6 +5,11 @@ int main() {
 	printf("Digita el anio: ");
 	scanf("%d", &anio);
 
+	if (anio <= 0) {
+		printf("Anio invalido. Debe ser mayor que cero.\n");
+		return 1;
+	}
+	
 	int resto19 = anio % 19;
 	int resto4 = anio % 4;
 	int resto7 = anio % 7;
